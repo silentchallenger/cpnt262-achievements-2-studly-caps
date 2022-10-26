@@ -10,7 +10,8 @@ const toStudly = function(event) {
   let newWord = "";
 
   for (let i = 0; i < sentence.length; i++) {
-    if (i % 2 === 0) {
+    const randomNumber = Math.random();
+    if (0.5 > randomNumber > 0) {
       const result = sentence.charAt(i).toLowerCase();
       newWord += result
     } else {
@@ -21,7 +22,6 @@ const toStudly = function(event) {
 
   // Refactor to output response to paragraph element  
   output.innerHTML = `"${sentence}" becomes "${newWord}" as studly case!`;
-
 }
 
 // Add `submit` event listener to button here
