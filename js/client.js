@@ -9,7 +9,7 @@ const toStudly = function(event) {
   const sentence = form.word.value;
   let newWord = "";
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < sentence.length; i++) {
     if (i % 2 === 0) {
       const result = sentence.charAt(i).toLowerCase();
       newWord += result

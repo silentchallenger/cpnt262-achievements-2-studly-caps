@@ -16,6 +16,10 @@ input, select, textarea, button {
   font-size: 24px;
 }
 
+input {
+  width: 80%;
+}
+
 input:required {
   border: 2px solid red;
 }
